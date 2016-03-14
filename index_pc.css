@@ -1,0 +1,360 @@
+﻿/* FUENTES GOOGLE FONTS */
+
+/* Las fuentes necesarias han sido bajadas a local */
+
+/* descargada de:  http://fonts.googleapis.com/css?family=Indie+Flower */
+	@font-face {
+	  font-family: 'Indie Flower';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Indie Flower'), local('IndieFlower'), url('fonts/Flower_Indie.woff') format('woff');
+	}	
+
+/* INDEX */
+
+/* plantila general de la web */
+#index {
+background:white;
+min-width:950px;
+max-width:1200px;
+height:640px;
+margin:auto;
+border:2px double;
+border-radius:10px;
+text-align:center;
+overflow:hidden;
+}
+/* parametros del IFRAME en el que se muestra el contenido */
+#iframeanterior {
+position:relative;
+width:auto;
+height:595px;
+text-align:left;
+}
+/* propiedades para centrar el logo, dentro del iframe */
+#pngindex {
+text-align:center;
+position:relative;
+top:50px;
+}
+
+/* EXTRA */
+
+/* clearboth tras floats */
+.clearboth { clear:both; }
+
+/* MENU */
+
+/* Valores del menu supeior */
+#menu {
+display:block;
+margin-top:5px;
+margin-left:10px;
+width:98%;
+height:20px;
+list-style:none;
+}
+/* Valores de cada caja de enlace */
+#menu li {
+width:15%;
+height:20px;
+text-align:center;
+float:left;
+border-left:1px dashed;
+margin:auto;
+}
+
+
+
+
+
+.banderas {
+display:inline-block; 
+margin-right:20px;
+}
+
+/* Valores del vinculo */
+#menu li a {
+text-decoration:none;
+color:black; 
+}
+/* eliminar primer borde izquierdo */
+#menu li:first-child {
+border-left:0px;
+}
+ /* propiedades cuando pones el ratón encima */ 
+#menu li a:hover {
+color:orange;
+cursor:pointer;
+}
+
+/* CONTENIDO de las páginas dentro de los IFRAME */
+
+/* contenido principal, de DENTRO de los iframes */
+#contenido {
+position:relative;
+width:100%;
+height:595px;
+overflow:hidden;
+}
+/* contenido de los iframe como floats */
+#contenido div { float:left; }
+/* caja de la imagen en la columna izquierda */
+.izq { 
+width:28%;
+height:575px;
+position:relative;
+top:10px;
+left:20px;
+}
+/* valores de la imagen */
+.izq img {
+width:100%;
+position:relative;
+top:25px;
+border:1px solid black;
+}
+/* parrafo inferior de la imagen */
+.izq p {
+position:relative;
+top:20px;
+font-family:verdana;
+font-style:italic;
+font-size:12px;
+text-align:center;
+}
+.botones { 
+width:100%; 
+height:20px; 
+}
+.botones a img { border:0px; }
+.botones a:nth-child(1) { float:left;}
+.botones a:nth-child(2) { float:right; } 
+
+.botonesmvl { display:none; }
+
+/* valores caja derecha, cuando hay imagen */
+.drcha {
+width:67%;
+height:575px;
+position:relative;
+left:30px;
+top:10px;
+font-family:verdana;
+width:300px fixed;
+}
+
+
+/* ARTICULOS GENERAL Y TITULO*/
+
+/* caja de los articulos de la izquierda */
+.articulos {
+width:100%;
+height:575 px;
+position:absolute;
+}
+/* caja de los articulos de la izquierda cuando no hay imagen y ocupa el 100% */
+.articulos100ancho {
+width:100%;
+height:575px;
+position:relative;
+top:10px;
+font-family:verdana;
+left:50px;
+}
+/* valores del titulo dentro de articulo */
+.titulo {
+position:relative;
+top:20px;
+width:98%;
+height:80px;
+font-family:'Indie Flower', cursive;
+font-weight:bold;
+left:10px;
+font-size:45px;
+}
+
+
+/* TEXTO ARTICULO CUANDO ÉSTE HA DE TENER INTERLINEADO */
+
+/* valores del texto inferior dentro de articulo */
+.textoart {
+position:relative;
+top:20px;
+margin-left:1%;
+margin-right:0%;
+width: 99%;
+height:480px;
+background:white;
+text-align:justify;
+font-family:verdana;
+font-size:15px;
+line-height:2;
+overflow:auto;
+padding-right:10px;
+box-sizing: border-box;
+}
+/* quitar decoracion dentro del texto los articulos */
+.textoart * {
+text-decoration:none;
+}
+/* quitar propiedades de las listas dentro de las secciones */
+.textoart ul  *{ 
+list-style:none; 
+text-decoration:none; 
+color:black;
+}
+/* quitar padding por defecto de los padres de las listas */
+.textoart>ul {
+padding:0px;
+}
+/* propiedades al pasar el raton por enlaces de las listas */
+.textoart ul div li ul a:hover li {
+color:orange;
+}
+
+/* TEXTO ARTICULO CUANDO ÉSTE NO HA DE TENER INTERLINEADO */
+
+/* valores del texto inferior dentro de articulo sin interlineado */
+.textoartsininter {
+position:relative;
+top:20px;
+margin-left:1%;
+margin-right:0px;
+width: 95%;
+height:480px;
+background:white;
+text-align:justify;
+font-family:verdana;
+font-size:15px;
+overflow:auto;
+padding-right:15px;
+box-sizing: border-box;
+}
+/* quitar propiedades de las listas dentro de las secciones cuando no hay interlineado */
+.textoartsininter ul  *{ 
+list-style:none; 
+text-decoration:none; 
+color:black;
+}
+/* quitar padding por defecto de los padres de las listas cuando no hay interlineado*/
+.textoartsininter>ul {
+padding:0px; 
+}
+/* variar la familia de fuente dentro de las subsecciones de las listas */
+.textoart ul div li {
+font-family:verdana;
+}
+/* variar la familia de fuente dentro de las subsecciones de las listas cuando no hay interlineado */
+.textoartsininter ul div li {
+font-family:verdana;
+}
+/* propiedades al pasar el raton por enlaces de las listas cuando no hay interlineado */
+.textoartsininter ul div li ul a:hover li {
+color:orange;
+}
+
+
+/* PROPIEDADES PROPIAS DE LA SECCION LEYENDAS */
+
+/* columna centro de las leyendas */
+.colizqleyendas, .colcentroleyendas, .coldrchaleyendas {
+float:left;
+min-width:260px;
+width:33.3%;
+height:auto;
+}
+
+.colizqleyendas li ul, .colcentroleyendas li ul, .coldrchaleyendas li ul{
+margin-bottom:23px;
+
+}
+/* PROPIEDADES PROPIAS DE LA SECCION LOCALIZACION */
+
+/* primera columna de las diferentes localizacion */
+.colizqlocalizacion {
+float:left;
+width:25%;
+height:auto;
+font-size:9px;
+}
+/* segunda columna de las diferentes localizacion */
+.coldrchalocalizacion {
+float:left;
+width:23%;
+height:auto;
+font-size:9px;
+}
+
+
+/* propiedades del mapa de google maps */
+.imagenloc {
+width:45%;
+height:400px;
+float:left;
+}
+
+/* PROPIEDADES DEL PIE DE PAGINA */
+
+footer {
+position:relative;
+top:2px;
+font-family:verdana;
+width:100%;
+height:10px;
+font-size:10px;
+}
+
+	
+/* VARIACIONES PARA 949PX a 481PX */
+
+@media screen and (max-width:950px) {
+	#index {
+	min-width:481px;
+	max-width:949px;
+	}
+	#pngindex  img{ width:90%; 
+	}
+	#menu {
+	margin-left:1.5%;
+	}	
+	#menu li:nth-child(1) {
+	min-width:44px;
+	}
+	#menu li:nth-child(2) {
+	min-width:80px;
+	}
+	#menu li:nth-child(3) {
+	min-width:68px;
+	}
+	#menu li:nth-child(4) {
+	min-width:100px;
+	}
+	#menu li:nth-child(5) {
+	min-width:66px;
+	}
+	.colizqlocalizacion, .coldrchalocalizacion { display:none; }
+	.imagenloc {
+	width:90%;
+	height:300px;
+	margin-bottom: 15px;
+	}
+	.drcha {
+	width:63%;
+	}
+	.izq { 
+	width:30%;
+	}
+	.izq img {
+	width:100%;
+	}
+	.titulo {
+	font-size: 35px;
+	line-height:1;
+	}
+	.articulos100ancho .articulos .textoart {
+	width:80%;
+	}
+}
+	
+	

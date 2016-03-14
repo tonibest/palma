@@ -1,0 +1,10 @@
+/* css principal junto adaptacion para 481px-949px */
+@import url( index_pc.css ) screen and ( min-width: 481px );
+/* css para movil, resolucion 275 a 481px */
+@import url( index_movil.css ) screen and (max-width:480px );
+
+/* menos de 275px, no se muestra nada y da error */
+@media screen and (max-width:274px) {
+body:after { content:"ERROR: Esta página requiere una resolución mínima de 275px de ancho."; }
+#index { display:none; }
+}

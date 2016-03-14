@@ -1,0 +1,189 @@
+﻿/* FUENTES GOOGLE FONTS */
+
+/* Las fuentes necesarias han sido bajadas a local */
+
+/* descargada de:  http://fonts.googleapis.com/css?family=Indie+Flower */
+	@font-face {
+	  font-family: 'Indie Flower';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Indie Flower'), local('IndieFlower'), url('fonts/Flower_Indie.woff') format('woff');
+	}	
+
+/* INDEX */
+
+/* plantila general de la web */	
+#index {	
+background:white;
+min-width:275px;
+max-width:400px;
+height:auto;
+margin:auto;
+text-align:center;
+}
+/* parametros del IFRAME en el que se muestra el contenido */
+#iframeanterior {
+height:auto;
+width:auto;
+}
+
+/* propiedades para el logo, dentro del iframe */
+#pngindex { 
+margin:auto; 
+}
+#pngindex img {  width:300px; }
+
+/* EXTRA */
+
+/* clearboth tras floats */
+.clearboth { clear:both; }
+
+/* MENU */
+
+/* Valores del menu supeior */
+#menu {
+width:100%;
+height:auto;
+list-style:none;
+position:relative;
+margin-top:5px;
+letter-spacing:5px;
+}
+/* Valores de cada caja de enlace */
+#menu>li {
+margin:auto;
+width:100%;
+height:25px;
+text-align:center;
+margin-bottom:5px;
+box-shadow:1px 1px 1px 1px black;
+background:lightblue;
+border-radius:5px;
+}
+#menu li a {
+position:relative;
+text-decoration:none;
+color:black; 
+top:2px;
+}
+#menu li:hover {
+background:orange;
+}
+#menu li:active {
+background:orange;
+}
+
+/* CONTENIDO de las páginas dentro de los IFRAME */
+
+/* contenido principal, de DENTRO de los iframes */
+#contenido {
+width:100%;
+height:auto;
+}
+
+/* ARTICULOS GENERAL Y TITULO*/
+
+.articulos100ancho, .articulos {
+width:100%;
+height:auto;
+position:relative;
+font-family:verdana;
+text-align:left;
+
+}
+.titulo {
+position:relative;
+width:100%;
+height:auto;
+font-family:'Indie Flower', cursive;
+font-weight:bold;
+font-size:25px;
+}
+.textoart {
+position:relative;
+width: 100%;
+height:auto;
+background:white;
+font-family:verdana;
+text-align:justify;
+font-size:15px;
+}
+.textoartsininter{
+position:relative;
+width: 100%;
+height:auto;
+text-align:justify;
+background:white;
+font-family:verdana;
+font-size:15px;
+}
+
+.botonesmvl { 
+width:100%; 
+height:20px; 
+}
+.botonesmvl a img { border:0px; }
+.botonesmvl a:nth-child(1) { float:left;}
+.botonesmvl a:nth-child(2) { float:right; } 
+.botones { display:none; }
+
+.textoart *{
+text-decoration:none;
+padding:0;
+}
+.textoartsininter * {
+text-decoration:none;
+padding:0;
+}
+.izq { display:none; }
+
+.textoart ul  *, .textoartsininter ul *{ 
+list-style:none; 
+text-decoration:none; 
+color:black;
+}
+.textoart ul>div>li, .textoartsininter>ul>div>li {
+font-family:verdana;
+width:90%;
+margin:auto;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.textoart ul div li ul li, .textoartsininter ul div li ul li{
+margin:auto;
+width:90%;
+height:20px;
+margin-top:5px;
+box-shadow:1px 1px 1px 1px black;
+background:lightgray;
+border-radius:5px;
+}
+.textoart ul div li ul li, .textoartsininter ul div li ul li:hover {
+background:orange;
+}
+/* PROPIEDADES PROPIAS DE LA SECCION LEYENDAS */
+
+.colizqleyendas, .colcentroleyendas, .coldrchaleyendas {
+width:100%;
+height:auto;
+}
+/* PROPIEDADES PROPIAS DE LA SECCION LOCALIZACION */
+.colizqlocalizacion, .coldrchalocalizacion { display:none; }
+/* propiedades del mapa de google maps */
+.imagenloc {
+min-width:100%;
+height:300px;
+margin-bottom: 15px;
+}
+
+/* pie de pagina */
+
+footer {
+position:relative;
+font-family:verdana;
+width:100%;
+height:10px;
+font-size:10px;
+}
+
